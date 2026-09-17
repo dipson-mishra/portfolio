@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dipson Mishra — Data Science &amp; ML</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="#top" class="logo">Dipson<span>.</span></a>
+    <div class="navlinks">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-blob"></div>
+  <div class="wrap hero-inner">
+    <div class="eyebrow-line hero-in" style="--d:0ms;"><span class="dot"></span>Kathmandu, Nepal — Data Science, TU · GCI World, Matsuo-Iwasawa Lab, UTokyo</div>
+    <h1 class="hero-in" style="--d:120ms;">I build the model that decides <em>what matters first.</em></h1>
+    <p class="hero-in" style="--d:280ms;">Dipson Mishra — a data science undergrad who spends more time on the "so what" of a dataset than the dataset itself. Currently interning in ML at FlyRank AI, and turning coursework into shipped pipelines on the side.</p>
+    <div class="cta-row hero-in" style="--d:400ms;">
+      <a class="btn btn-primary" href="#projects">See the work</a>
+      <a class="btn btn-ghost" href="#contact">Get in touch</a>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap about-grid reveal-stagger">
+    <div class="reveal">
+      <p><strong>I like problems where the hard part isn't the algorithm — it's deciding what to trust.</strong> Most of my work sits at that seam: cleaning data that lies a little, picking a baseline that's honest about its limits, and building models whose mistakes are at least explainable.</p>
+      <p>I'm a 4th-semester Data Science student at Tribhuvan University, currently spending my days as an ML intern at FlyRank AI, where I've worked the full CRISP-DM cycle on a real SEO dataset — from "should we even use ML here" through to a shipped decision-support tool.</p>
+      <p>I was also accepted as a trainee into GCI World, a three-month AI &amp; data science program run by the Matsuo-Iwasawa Laboratory at the Graduate School of Engineering, The University of Tokyo — a chance to learn alongside a research-grade curriculum rather than a self-taught one.</p>
+      <p>Outside of coursework, I run my own small projects to stress-test what I've learned: a real-estate pricing pipeline built from scratch, and a lightweight recommender that started as a weekend experiment.</p>
+    </div>
+    <div class="fact-list reveal">
+      <div class="fact"><span class="k">Based in</span><span class="v">Kathmandu, Nepal</span></div>
+      <div class="fact"><span class="k">Studying</span><span class="v">B.Sc. Data Science, TU — expected 2028</span></div>
+      <div class="fact"><span class="k">Currently</span><span class="v">ML Intern, FlyRank AI</span></div>
+      <div class="fact"><span class="k">Also in</span><span class="v">WorldQuant University Applied Data Science Lab</span></div>
+      <div class="fact"><span class="k">Trainee at</span><span class="v">GCI World, Matsuo-Iwasawa Lab, UTokyo</span></div>
+      <div class="fact"><span class="k">Working toward</span><span class="v">Full-stack ML developer, fintech focus</span></div>
+      <div class="fact"><span class="k">Reach me</span><span class="v">dipsonm136@gmail.com</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Experience</h2>
+      <p>The internship that taught me most projects fail before a single model is trained.</p>
+    </div>
+
+    <!-- FlyRank AI -->
+    <div class="exp-card reveal">
+      <div class="exp-role">
+        <h3>ML Intern</h3>
+        <div class="meta">FlyRank AI</div>
+        <div class="stint">Aug 2026 – Oct 2026 · First professional role</div>
+      </div>
+      <div class="exp-body">
+        <p>Worked the internship as a full CRISP-DM cycle rather than a modeling exercise: framing whether ML was the right tool, then building a ranked content-refresh system for FlyRank's anonymized SEO data — 30,000 content records across 32 clients, plus a 79M-row enterprise pass queried out-of-core with DuckDB on Google Colab, since my laptop's 16GB of RAM couldn't hold it locally.</p>
+        <p>Engineered 40+ signals from search demand, CTR, and engagement data, then compared logistic regression, decision trees, and random forest under a client-grouped holdout split to keep the evaluation honest. The final random forest model beat a transparent rule-based baseline by 3x on precision@50, and every output ships with a reason code and a confidence tier rather than a bare prediction.</p>
+        <div class="stat-row">
+          <div class="stat"><div class="num">0.750</div><div class="lbl">ROC AUC, best model</div></div>
+          <div class="stat"><div class="num">3×</div><div class="lbl">precision@50 vs. baseline</div></div>
+          <div class="stat"><div class="num">79M</div><div class="lbl">rows processed at scale</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Matsuo-Iwasawa Lab, UTokyo -->
+    <div class="exp-card reveal">
+      <div class="exp-role">
+        <h3>AI &amp; Data Science Trainee</h3>
+        <div class="meta">Matsuo-Iwasawa Lab, UTokyo</div>
+        <div class="stint">Sep 2026 – Dec 2026 · GCI World Program</div>
+      </div>
+      <div class="exp-body">
+        <p>Engaged in a 14-week intensive program hosted by the Matsuo-Iwasawa Laboratory at The University of Tokyo's Graduate School of Engineering, focusing on practical data science workflows and applied machine learning foundations.</p>
+        <p>Engineered pipelines using NumPy, Pandas, and SQL before progressing to supervised and unsupervised learning, feature engineering, and time-series forecasting — culminating in a hands-on modeling competition and final assignment.</p>
+        <div class="stat-row">
+          <div class="stat"><div class="num">14</div><div class="lbl">weeks of intensive training</div></div>
+          <div class="stat"><div class="num">6+</div><div class="lbl">core ML &amp; SQL domains</div></div>
+          <div class="stat"><div class="num">UTokyo</div><div class="lbl">Matsuo-Iwasawa Lab program</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="projects">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Projects</h2>
+      <p>Independent work I use to test ideas I only half-learned in class.</p>
+    </div>
+    <div class="project-list reveal-stagger">
+
+      <div class="project reveal">
+        <div class="index">01</div>
+        <div>
+          <h3>Content Refresh Prioritization — FlyRank Capstone</h3>
+          <p>A decision-support system that ranks 30,000 pages by how worth reviewing they are, using demand, CTR gaps, and engagement signals — plus SHAP explanations so editors know why a page made the list.</p>
+          <div class="tag-row">
+            <span class="tag">Python</span>
+            <span class="tag">scikit-learn</span>
+            <span class="tag">DuckDB + SQL</span>
+            <span class="tag">SHAP</span>
+          </div>
+        </div>
+        <div class="project-meta">Internship capstone</div>
+      </div>
+
+      <div class="project reveal">
+        <div class="index">02</div>
+        <div>
+          <h3>Mexico City Real Estate Pricing Pipeline</h3>
+          <p>An end-to-end pipeline on 23,140 raw Properati listings — cleaning, log-transforming skewed price and surface-area distributions, and a baseline linear regression that's honestly reported as underfitting, with Ridge/Lasso and tree-based models next.</p>
+          <div class="tag-row">
+            <span class="tag">pandas</span>
+            <span class="tag">numpy</span>
+            <span class="tag">scikit-learn</span>
+            <span class="tag">seaborn</span>
+          </div>
+        </div>
+        <div class="project-meta">Personal project — in progress</div>
+      </div>
+
+      <div class="project reveal">
+        <div class="index">03</div>
+        <div>
+          <h3>Movie Recommender</h3>
+          <p>A deliberately small recommendation engine using CountVectorizer and cosine similarity — built to get the mechanics of content-based recommendation right before reaching for anything heavier.</p>
+          <div class="tag-row">
+            <span class="tag">Python</span>
+            <span class="tag">scikit-learn</span>
+          </div>
+        </div>
+        <div class="project-meta">Personal project — completed</div>
+      </div>
+
+      <div class="project reveal">
+        <div class="index">04</div>
+        <div>
+          <h3>GCI World — Matsuo-Iwasawa Lab, UTokyo</h3>
+          <p>A 14-week AI &amp; data science program run by the Matsuo-Iwasawa Laboratory, Graduate School of Engineering, The University of Tokyo — numpy and pandas through supervised learning, feature engineering, SQL, unsupervised learning, and time series, closing with a competition and final assignment.</p>
+          <div class="tag-row">
+            <span class="tag">Supervised learning</span>
+            <span class="tag">Feature engineering</span>
+            <span class="tag">Time series</span>
+          </div>
+        </div>
+        <div class="project-meta">Trainee · Sep–Dec 2026</div>
+      </div>
+
+      <div class="project reveal">
+        <div class="index">05</div>
+        <div>
+          <h3>Applied Data Science Lab</h3>
+          <p>Working through WorldQuant University's 8-project lab covering data analysis, visualization, and prediction/classification — currently on project 2, with a Deep Learning Lab queued next.</p>
+          <div class="tag-row">
+            <span class="tag">Data analysis</span>
+            <span class="tag">Classification</span>
+          </div>
+        </div>
+        <div class="project-meta">WQU · 2 of 8 complete</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Tools I reach for</h2>
+      <p>The stack behind everything above.</p>
+    </div>
+    <div class="skill-cols reveal-stagger">
+      <div class="skill-col reveal">
+        <h4>Languages</h4>
+        <ul>
+          <li>Python — proficient</li>
+          <li>SQL, via DuckDB</li>
+          <li>Working familiarity with others</li>
+        </ul>
+      </div>
+      <div class="skill-col reveal">
+        <h4>Libraries</h4>
+        <ul>
+          <li>pandas &amp; numpy</li>
+          <li>scikit-learn</li>
+          <li>matplotlib, seaborn, plotly</li>
+        </ul>
+      </div>
+      <div class="skill-col reveal">
+        <h4>Workflow</h4>
+        <ul>
+          <li>Jupyter &amp; Google Colab</li>
+          <li>Git &amp; GitHub</li>
+          <li>SHAP for interpretability</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="contact reveal">
+      <div class="contact-blob"></div>
+      <h2>Let's talk data.</h2>
+      <p>Open to ML/data science internships, research collaborations, and anything fintech-adjacent. I reply faster to email than anything else.</p>
+      <div class="contact-links">
+        <a class="btn btn-primary" href="mailto:dipsonm136@gmail.com">Email me</a>
+        <a class="btn btn-ghost" href="https://github.com/dipson-mishra" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/dipson-mishra-b5a1881b6/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap" style="display:flex; justify-content:space-between; width:100%; flex-wrap:wrap; gap:12px;">
+    <span>Dipson Mishra — Data Science, TU</span>
+    <span>Kathmandu, Nepal</span>
+  </div>
+</footer>
+
+<div class="veil" id="veil"></div>
+
+<script src="portfolio.js" defer></script>
+
+</body>
+</html>
