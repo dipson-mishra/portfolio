@@ -8,19 +8,17 @@ A single-page personal portfolio built without a framework or build step.
 - CSS3 for responsive layout, custom properties, transitions, animations, and reduced-motion support
 - Vanilla JavaScript for entrance effects, scroll-triggered reveals, pointer-responsive decoration, and anchor transitions
 - Google Fonts: Inter and Space Grotesk
-- Vercel configuration is included for deployment
+- GitHub Pages is used for deployment
 
 ## Run locally
 
-Open `portfolio.html` in a browser. For a more realistic local environment, serve this directory with any static file server.
+Open `index.html` in a browser. For a more realistic local environment, serve this directory with any static file server.
 
 ## Project files
 
-- `portfolio.html` — page markup
+- `index.html` — page markup
 - `portfolio.css` — styling and responsive behavior
 - `portfolio.js` — interactive effects
-- `vercel.json` — deployment routing configuration
 
-## Deployment note
 
-The current `vercel.json` references `api/index.php`, `style.css`, and `main.js`, which are not included in this repository and do not match the portfolio file names. Update or remove those routes before deploying this static site to Vercel.
+
