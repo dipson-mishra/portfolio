@@ -1,5 +1,31 @@
 document.body.classList.add('is-ready');
 
+  // Theme Toggle Logic
+  const themeToggle = document.getElementById('theme-toggle');
+  const root = document.documentElement;
+
+  const syncThemeToggle = () => {
+    const isLight = root.classList.contains('light-mode');
+    const nextTheme = isLight ? 'dark' : 'light';
+    themeToggle.setAttribute('aria-pressed', String(isLight));
+    themeToggle.setAttribute('aria-label', `Switch to ${nextTheme} theme`);
+    themeToggle.setAttribute('title', `Switch to ${nextTheme} theme`);
+  };
+
+  if (themeToggle) {
+    syncThemeToggle();
+    themeToggle.addEventListener('click', () => {
+      root.classList.toggle('light-mode');
+      const theme = root.classList.contains('light-mode') ? 'light' : 'dark';
+      try {
+        localStorage.setItem('theme', theme);
+      } catch (error) {
+        // The selected theme still works for this visit without storage.
+      }
+      syncThemeToggle();
+    });
+  }
+
   // Orchestrated scroll reveals
   const io = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
