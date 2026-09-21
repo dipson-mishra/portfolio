@@ -1,24 +1,30 @@
-# Portfolio Website
+# Dipson Mishra Portfolio
 
-A single-page personal portfolio built without a framework or build step.
+A responsive, single-page portfolio for a data science and machine-learning student. It is built with plain HTML, CSS, and JavaScript—no framework or build step required.
+
+## Highlights
+
+- Responsive sections for experience, projects, skills, and contact details
+- Persistent dark and light themes, controlled from the navigation bar
+- Accessible theme button labels and keyboard focus styles
+- Scroll-reveal and entrance animations that respect reduced-motion preferences
+- Smooth in-page navigation and a pointer-responsive hero decoration
 
 ## Technology
 
-- HTML5 for page structure and in-page navigation
-- CSS3 for responsive layout, custom properties, transitions, animations, and reduced-motion support
-- Vanilla JavaScript for entrance effects, scroll-triggered reveals, pointer-responsive decoration, and anchor transitions
+- HTML5
+- CSS3 custom properties, responsive layouts, transitions, and animations
+- Vanilla JavaScript for theme persistence and page interactions
 - Google Fonts: Inter and Space Grotesk
-- GitHub Pages is used for deployment
 
 ## Run locally
 
-Open `index.html` in a browser. For a more realistic local environment, serve this directory with any static file server.
+Open `index.html` directly in a browser, or run any static file server from this directory.
 
 ## Project files
 
-- `index.html` — page markup
-- `portfolio.css` — styling and responsive behavior
-- `portfolio.js` — interactive effects
-
+- `index.html` — page structure and content
+- `portfolio.css` — visual design, responsive styles, and theme tokens
+- `portfolio.js` — theme toggle and interactive effects
 
 
