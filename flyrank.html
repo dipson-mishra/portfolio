@@ -415,11 +415,11 @@
             </div>
             <div class="stat">
               <span class="stat-label">Precision@50</span>
-              <span class="stat-value">0.680</span>
+              <span class="stat-value">0.750</span>
             </div>
             <div class="stat">
               <span class="stat-label">Lift vs. rule</span>
-              <span class="stat-value">2.8×</span>
+              <span class="stat-value">3×</span>
             </div>
             <div class="stat">
               <span class="stat-label">Best model</span>
@@ -446,7 +446,7 @@
 
       <section class="section reveal" aria-labelledby="data-heading">
         <h2 id="data-heading">2. Data and safety</h2>
-        <p>The paper uses the bundled anonymized FlyRank starter dataset, which contains 30,000 rows and 44 columns. The label for the task is <strong>is_declining_label</strong>, defined as whether the page trend direction is downward. This target is derived from page behavior rather than editorial judgment, so the signal is measurable and reproducible.</p>
+        <p>The paper uses the bundled anonymized FlyRank starter dataset, which contains 79M rows and 44 features . The label for the task is <strong>is_declining_label</strong>, defined as whether the page trend direction is downward. This target is derived from page behavior rather than editorial judgment, so the signal is measurable and reproducible.</p>
         <p>To stay safe and public-appropriate, we excluded client-identifying information, page titles, URLs, domains, and any raw keyword fields from the modeling set. We also kept the label logic consistent with the project rules: trend direction and trend percentage are used to define the target, not to leak signal into the model itself. The model is therefore a decision-support layer on public-safe behavioral features, not a system that infers hidden client identity.</p>
         <div class="callout">
           <strong>Safety principle:</strong> the data is used to rank likely decline risk, not to assign blame or predict a client’s private strategy. The output is a review aid for humans, not an automatic publishing decision.
